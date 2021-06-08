@@ -417,7 +417,7 @@ abstract class AbstractRector extends NodeVisitorAbstract implements PhpRectorIn
         return $currentArgs;
     }
 
-    protected function unwrapExpression(Stmt $stmt): Node
+    protected function unwrapExpression(Stmt $stmt): Expr | Stmt
     {
         if ($stmt instanceof Expression) {
             return $stmt->expr;
