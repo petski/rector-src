@@ -95,8 +95,6 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         // to be enabled when all rules for php 8 syntax applied
         // PhpVersionFeature::CLASS_ON_OBJECT
         ClassOnObjectRector::class,
-        // PhpVersionFeature::STATIC_RETURN_TYPE
-        ReturnTypeDeclarationRector::class,
         RenamePropertyToMatchTypeRector::class,
 
         RemoveUnreachableStatementRector::class => [
